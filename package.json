@@ -1,0 +1,17 @@
+{
+  "name": "queues",
+  "version": "1.0.0",
+  "description": "Research and testing of queues",
+  "scripts": {
+    "nsq:fresh": "cd nsq && docker-compose kill; docker-compose rm -f; docker-comopse up -d",
+    "nsq:kill": "cd nsq && docker-compose kill",
+    "nsq:purge": "cd nsq && docker-compose kill; docker-compose rm -f",
+    "nsq:start": "cd nsq && docker-compose up -d",
+    "nsq:stop": "cd nsq && docker-compose stop"
+  },
+  "author": "Joel Edwards <joeledwards@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "squeaky": "^2.4.2"
+  }
+}
